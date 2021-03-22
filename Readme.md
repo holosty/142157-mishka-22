@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Денис Дьяконов](https://up.htmlacademy.ru/adaptive/22/user/142157).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
