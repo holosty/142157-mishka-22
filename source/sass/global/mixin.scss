@@ -17,6 +17,6 @@
 }
 
 @mixin wrapper-m {
-  width: 260px;
-  margin: 0 auto;
+  width: auto;
+  padding: 0 30px;
 }

@@ -3,8 +3,7 @@
   background-color: $color-white;
 
   &__wrapper {
-    width: 260px;
-    margin: 0 auto;
+    @include wrapper-m;
   }
 
   &__title {
@@ -36,10 +35,9 @@
   }
 
   &__button {
-    margin: 0 auto;
+    width: 100%;
     padding-top: 14px;
     padding-bottom: 14px;
-    width: 260px;
     font-size: 18px;
     line-height: 20px;
   }
