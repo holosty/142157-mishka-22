@@ -1,0 +1,70 @@
+.reviews {
+  background-color: $color-white;
+
+  &__wrapper {
+    @include wrapper-m;
+  }
+
+  &__title {
+    @include font-bold;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    @include list;
+  }
+
+  &__author-info {
+    margin: 0;
+  }
+
+  &__text {
+    line-height: 30px;
+    color: $color-dark-grey;
+  }
+
+  &__author-name {
+    @include font-bold;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__author-contact {
+    font-size: 17px;
+    line-height: 30px;
+    font-style: normal;
+    color: $color-dark-grey;
+  }
+
+  &__toggle {
+    text-align: center;
+    border: 1px solid $color-light-grey;
+  }
+
+  &__button-toggle {
+    width: 50%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: $color-white;
+    border: none;
+  }
+
+  &__button-toggle--left {
+    background-image: url("../img/huge-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button-toggle--right {
+    background-image: url("../img/huge-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+  }
+}

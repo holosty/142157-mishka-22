@@ -1,0 +1,23 @@
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font-normal {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin font-bold {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+@mixin wrapper-m {
+  width: 260px;
+  margin: 0 auto;
+}
+

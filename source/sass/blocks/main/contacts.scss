@@ -1,0 +1,33 @@
+.contacts {
+  background-color: $color-white;
+
+  &__wrapper {
+    @include wrapper-m;
+  }
+
+  &__title {
+    @include font-bold;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__info {
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-dark-grey;
+  }
+
+  &__text-link {
+    color: $color-dark-grey;
+  }
+
+  &__text-info {
+    font-style: normal;
+  }
+
+  &__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+  }
+}

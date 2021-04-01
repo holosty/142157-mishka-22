@@ -1,0 +1,21 @@
+.about {
+  @include font-bold;
+  background-color: $color-white;
+
+  &__wrapper {
+    @include wrapper-m;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    @include list;
+  }
+
+  &__item {
+    font-size: 17px;
+  }
+}
