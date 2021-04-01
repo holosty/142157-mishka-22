@@ -2,6 +2,7 @@
   height: 100%;
 
   &__body {
+    @include font-normal;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
@@ -9,7 +10,7 @@
     padding: 0;
     min-width: 320px;
     min-height: 100%;
-    @include font-normal;
+
     font-size: 15px;
     line-height: 20px;
     color: $color-black;
