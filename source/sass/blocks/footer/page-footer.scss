@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: $color-grey;
+
+  &__wrapper {
+    @include wrapper-m;
+  }
+}
+
+.social__list {
+  @include list;
+}
+
+.copyright__text {
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 34px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+}

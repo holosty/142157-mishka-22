@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+// Global
+
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/colors.scss";
+@import "global/mixin.scss";
+
+// Blocks
+
+@import "blocks/page.scss";
+
+// Header
+
+@import "blocks/header/page-header.scss";
+@import "blocks/header/logo.scss";
+@import "blocks/header/main-nav.scss";
+
+// Main
+
+@import "blocks/main/button.scss";
+@import "blocks/main/products.scss";
+@import "blocks/main/offer.scss";
+@import "blocks/main/about.scss";
+@import "blocks/main/reviews.scss";
+@import "blocks/main/contacts.scss";
+
+// Footer
+
+@import "blocks/footer/page-footer.scss";
+@import "components/modal.scss";

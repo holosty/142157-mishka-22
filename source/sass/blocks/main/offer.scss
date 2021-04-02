@@ -1,0 +1,56 @@
+.offer {
+  @include font-bold;
+  background-color: $color-white;
+
+  &__wrapper {
+    @include wrapper-m;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__hint {
+    font-size: 17px;
+    color: $color-green;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    @include font-normal;
+    line-height: 24px;
+    color: $color-dark-grey;
+  }
+
+  &__img {
+    background-color: $color-background-img;
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 24px;
+    color: $color-dark-grey;
+    text-align: center;
+  }
+
+  &__button {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.table-property {
+  color: $color-dark-grey;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: unset;
+
+  &__cell {
+    font-weight: normal;
+    text-align: left;
+  }
+}
