@@ -51,7 +51,10 @@
 
   &__input,
   &__textarea {
+    @include font-normal;
     width: 100%;
+    font-size: 19px;
+    line-height: 18px;
 
     &::placeholder {
       @include font-normal;
@@ -62,13 +65,18 @@
     }
   }
 
-  &__input--indent-bottom {
-    margin-bottom: 35px;
+  &__input {
+    color: $color-dark-grey;
+
+    &__input--indent-bottom {
+      margin-bottom: 35px;
+    }
   }
 
   &__textarea {
     min-height: 142px;
     padding: 17px;
+    color: $color-black;
   }
 
   &__correction {
