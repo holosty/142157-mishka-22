@@ -2,9 +2,8 @@
   @include font-bold;
   background-color: $color-white;
 
-  &__wrapper {
+  &__inner {
     @include wrapper-m;
-    margin-bottom: 50px;
   }
 
   &__desc {
@@ -15,6 +14,7 @@
   }
 
   &__fieldset {
+    margin: 0;
     padding: 0;
     border: none;
   }
@@ -68,7 +68,7 @@
   &__input {
     color: $color-dark-grey;
 
-    &__input--indent-bottom {
+    &--indent-bottom {
       margin-bottom: 35px;
     }
   }

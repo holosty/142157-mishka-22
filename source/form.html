@@ -51,7 +51,7 @@
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
-        <div class="main-form__wrapper">
+        <div class="main-form__inner">
           <p class="main-form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend">Тип</legend>
@@ -66,8 +66,10 @@
               </li>
             </ul>
           </fieldset>
+        </div>
 
-          <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
+          <div class="main-form__inner">
             <legend class="main-form__legend">Цвет</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
@@ -95,9 +97,11 @@
                 <label class="main-form__label" for="color-6">Оранжевый</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset">
+          <div class="main-form__inner">
             <legend class="main-form__legend">ФИО</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
@@ -113,20 +117,26 @@
                 <input class="main-form__input" type="text" name="patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
+          <div class="main-form__inner">
             <legend class="main-form__legend">Тел</legend>
             <label for="user-fone"><span class="visually-hidden">Телефон:</span></label>
             <input class="main-form__input main-form__input--indent-bottom" type="tel" name="telephone" id="user-fone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </fieldset>
+          </div>
+        </fieldset>
 
-          <fieldset class="main-form__fieldset">
+        <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
+          <div class="main-form__inner">
             <legend class="main-form__legend">E-mail</legend>
             <label for="user-email"><span class="visually-hidden">E-mail:</span></label>
             <input class="main-form__input main-form__input--indent-bottom" type="email" name="email" id="user-email" placeholder="Ваш Email*" required>
-          </fieldset>
+          </div>
+        </fieldset>
 
+        <div class="main-form__inner">
           <fieldset class="main-form__fieldset">
             <legend class="main-form__legend">Доп</legend>
             <label for="user-text"><span class="visually-hidden">Пожелание к заказу:</span></label>
