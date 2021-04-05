@@ -15,19 +15,26 @@
 @import "blocks/header/page-header.scss";
 @import "blocks/header/logo.scss";
 @import "blocks/header/main-nav.scss";
+@import "blocks/header/nav-list.scss";
+@import "blocks/header/search.scss";
+@import "blocks/header/basket.scss";
+@import "blocks/header/submenu.scss";
 
 // Main
 
+@import "blocks/main/page-main.scss";
 @import "blocks/main/button.scss";
 @import "blocks/main/products.scss";
 @import "blocks/main/offer.scss";
+@import "blocks/main/offer-table-property.scss";
 @import "blocks/main/about.scss";
 @import "blocks/main/reviews.scss";
 @import "blocks/main/contacts.scss";
-@import "blocks/main/page-main.scss";
 @import "blocks/main/form.scss";
 
 // Footer
 
 @import "blocks/footer/page-footer.scss";
+@import "blocks/footer/social.scss";
+@import "blocks/footer/copyright.scss";
 @import "components/modal.scss";

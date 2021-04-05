@@ -4,40 +4,40 @@
   background-repeat: no-repeat;
   background-color: $color-background-img;
   background-position: top center;
+}
 
-  &__wrapper {
-    @include wrapper-m;
-  }
+.products__wrapper {
+  @include wrapper-m;
+}
 
-  &__title {
-    padding-top: 73px;
-    padding-bottom: 120px;
-    font-size: 27px;
-    line-height: 30px;
-    text-align: center;
-  }
+.products__title {
+  padding-top: 73px;
+  padding-bottom: 120px;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
 
-  &__list {
-    @include list;
-  }
+.products__list {
+  @include list;
+}
 
-  &__item {
-    margin: 0 -30px;
-  }
+.products__item {
+  margin: 0 -30px;
 
-  &__item--theme-green {
+  &--theme-green {
     background-color: $color-green;
   }
 
-  &__item--theme-dark-green {
+  &--theme-dark-green {
     background-color: $color-dark-green;
   }
+}
 
-  &__link {
-    display: block;
-    margin-left: 30px;
-    font-size: 19px;
-    line-height: 24px;
-    color: $color-white;
-  }
+.products__link {
+  display: block;
+  margin-left: 30px;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-white;
 }

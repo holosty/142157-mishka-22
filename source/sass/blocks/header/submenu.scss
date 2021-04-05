@@ -1,0 +1,7 @@
+.submenu-list {
+  @include list;
+}
+
+.submenu-list__link {
+  color: $color-black;
+}

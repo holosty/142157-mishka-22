@@ -1,38 +1,38 @@
 .modal {
   background-color: $color-white;
   text-align: center;
+}
 
-  &__wrapper {
-    @include wrapper-m;
-  }
+.modal__wrapper {
+  @include wrapper-m;
+}
 
-  &__title {
-    @include font-bold;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.modal__title {
+  @include font-bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  &__legend {
-    line-height: 30px;
-    color: $color-dark-grey;
-  }
+.modal__legend {
+  line-height: 30px;
+  color: $color-dark-grey;
+}
 
-  &__label {
-    @include font-bold;
-    font-size: 17px;
-    line-height: 16px;
-    text-transform: uppercase;
-  }
+.modal__label {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 
-  &__button {
-    width: 100%;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    font-size: 17px;
-    line-height: 16px;
-    color: $color-white;
-    background-color: $color-green;
-    border: none;
-  }
+.modal__button {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-white;
+  background-color: $color-green;
+  border: none;
 }

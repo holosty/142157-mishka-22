@@ -1,0 +1,11 @@
+.table-property {
+  color: $color-dark-grey;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: unset;
+}
+
+.table-property__cell {
+  font-weight: normal;
+  text-align: left;
+}

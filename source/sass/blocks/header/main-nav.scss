@@ -2,38 +2,16 @@
   @include font-bold;
   font-size: 17px;
   line-height: 24px;
-  background-color: $color-white;
-
-  &__wrapper {
-    @include wrapper-m;
-    text-align: center;
-  }
-
-  &__delivery-text {
-    @include font-normal;
-    font-size: 15px;
-    line-height: 24px;
-    color: $color-dark-grey;
-  }
 }
 
-.nav-list {
-  @include list;
-
-  &__link {
-    color: $color-black;
-  }
+.main-nav__wrapper {
+  @include wrapper-m;
+  text-align: center;
 }
 
-.search__link,
-.basket__link {
-  color: $color-black;
-}
-
-.submenu-list {
-  @include list;
-
-  &__link {
-    color: $color-black;
-  }
+.main-nav__delivery-text {
+  @include font-normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-dark-grey;
 }
