@@ -1,0 +1,11 @@
+.catalog__wrapper {
+  @include wrapper-m;
+}
+
+.catalog__list {
+  @include list;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}

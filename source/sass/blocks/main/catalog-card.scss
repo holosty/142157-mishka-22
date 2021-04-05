@@ -1,0 +1,33 @@
+.card__link {
+  display: block;
+  line-height: 0;
+}
+
+.card__inner {
+  padding: 27px 28px 0;
+  border: 1px solid $color-light-grey;
+}
+
+.card__title {
+  @include font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.card__desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-dark-grey;
+}
+
+.card__price {
+  @include font-bold;
+  line-height: 24px;
+  margin: 0;
+  padding-top: 22.5px;
+  padding-bottom: 26.5px;
+}
