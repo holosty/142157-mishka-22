@@ -1,33 +1,29 @@
-.contacts {
-  background-color: $color-white;
+.contacts__wrapper {
+  @include wrapper-m;
+}
 
-  &__wrapper {
-    @include wrapper-m;
-  }
+.contacts__title {
+  @include font-bold;
+  font-size: 18px;
+  line-height: 30px;
+}
 
-  &__title {
-    @include font-bold;
-    font-size: 18px;
-    line-height: 30px;
-  }
+.contacts__info {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-dark-grey;
+}
 
-  &__info {
-    font-size: 14px;
-    line-height: 30px;
-    color: $color-dark-grey;
-  }
+.contacts__text-link {
+  color: $color-dark-grey;
+}
 
-  &__text-link {
-    color: $color-dark-grey;
-  }
+.contacts__text-info {
+  font-style: normal;
+}
 
-  &__text-info {
-    font-style: normal;
-  }
-
-  &__button {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    font-size: 18px;
-  }
+.contacts__button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 18px;
 }

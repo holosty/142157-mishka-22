@@ -1,97 +1,96 @@
 .main-form {
   @include font-bold;
-  background-color: $color-white;
+}
 
-  &__inner {
-    @include wrapper-m;
-  }
+.main-form__inner {
+  @include wrapper-m;
+}
 
-  &__desc {
-    @include font-normal;
-    font-size: 13px;
-    line-height: 24px;
-    color: $color-dark-grey;
-  }
+.main-form__desc {
+  @include font-normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-dark-grey;
+}
 
-  &__fieldset {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
+.main-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 
-  &__legend {
-    display: flex;
-    align-items: center;
-    column-gap: 22px;
+.main-form__legend {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  width: 100%;
+  margin-bottom: 35px;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-green;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  &::after {
+    content: "";
     width: 100%;
-    margin-bottom: 35px;
-    font-size: 17px;
-    line-height: 16px;
-    color: $color-green;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    &::after {
-      content: "";
-      width: 100%;
-      height: 1px;
-      background-color: $color-green;
-    }
+    height: 1px;
+    background-color: $color-green;
   }
+}
 
-  &__list {
-    @include list;
-    margin-bottom: 43px;
-  }
+.main-form__list {
+  @include list;
+  margin-bottom: 43px;
+}
 
-  &__label {
+.main-form__label {
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.main-form__input,
+.main-form__textarea {
+  @include font-normal;
+  width: 100%;
+  font-size: 19px;
+  line-height: 18px;
+
+  &::placeholder {
+    @include font-normal;
     font-size: 17px;
     line-height: 18px;
-  }
-
-  &__input,
-  &__textarea {
-    @include font-normal;
-    width: 100%;
-    font-size: 19px;
-    line-height: 18px;
-
-    &::placeholder {
-      @include font-normal;
-      font-size: 17px;
-      line-height: 18px;
-      color: $color-black;
-      opacity: 0.3;
-    }
-  }
-
-  &__input {
-    color: $color-dark-grey;
-
-    &--indent-bottom {
-      margin-bottom: 35px;
-    }
-  }
-
-  &__textarea {
-    min-height: 142px;
-    padding: 17px;
     color: $color-black;
+    opacity: 0.3;
   }
+}
 
-  &__correction {
-    @include font-normal;
-    display: block;
-    margin-top: 17px;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 16px;
-    color: $color-dark-grey;
-  }
+.main-form__input {
+  color: $color-dark-grey;
 
-  &__button {
-    width: 100%;
-    padding-top: 14px;
-    padding-bottom: 14px;
+  &--indent-bottom {
+    margin-bottom: 35px;
   }
+}
+
+.main-form__textarea {
+  min-height: 142px;
+  padding: 17px;
+  color: $color-black;
+}
+
+.main-form__correction {
+  @include font-normal;
+  display: block;
+  margin-top: 17px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-dark-grey;
+}
+
+.main-form__button {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }

@@ -1,0 +1,19 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  @include font-normal;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100%;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $color-black;
+  background-color: $color-white;
+}
