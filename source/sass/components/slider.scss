@@ -1,0 +1,9 @@
+.slider__wrapper {
+  position: relative;
+  order: 2;
+  flex-basis: 100%;
+
+  @media (min-width: $large) {
+    margin-left: 175px;
+  }
+}

@@ -7,4 +7,12 @@
   margin: 0 auto;
   width: 86px;
   height: 35px;
+
+  @media (min-width: $medium) {
+    margin: 0;
+  }
+
+  @media (min-width: $large) {
+    margin: 0 auto;
+  }
 }

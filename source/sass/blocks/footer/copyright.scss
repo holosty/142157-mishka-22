@@ -1,4 +1,13 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
+  padding-top: 29px;
+  padding-bottom: 32px;
   font-size: 19px;
   line-height: 18px;
 }
@@ -6,6 +15,8 @@
 .copyright__link {
   position: relative;
   display: block;
+  width: 27px;
+  height: 34px;
 
   &::before {
     content: "";
@@ -14,5 +25,6 @@
     height: 34px;
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }

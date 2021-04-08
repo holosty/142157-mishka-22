@@ -4,22 +4,57 @@
   background-repeat: no-repeat;
   background-color: $color-background-img;
   background-position: top center;
+
+  @media (min-width: $medium) {
+    background-image: url("../img/hero-desktop-2.jpg");
+  }
+
+  @media (min-width: $large) {
+    background-image: url("../img/hero-desktop-1.jpg");
+  }
 }
 
 .products__wrapper {
   @include wrapper-m;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+    margin-bottom: 54px;
+  }
 }
 
 .products__title {
+  margin: 0;
   padding-top: 73px;
   padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $medium) {
+    padding-top: 155px;
+    padding-bottom: 372px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .products__list {
   @include list;
+
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .products__item {
@@ -32,12 +67,26 @@
   &--theme-dark-green {
     background-color: $color-dark-green;
   }
+
+  @media (min-width: $medium) {
+    margin: 0;
+    width: 50%;
+  }
 }
 
 .products__link {
   display: block;
   margin-left: 30px;
+  padding-top: 24px;
+  padding-bottom: 31px;
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
+
+  @media (min-width: $medium) {
+    padding-top: 25px;
+    padding-bottom: 34px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

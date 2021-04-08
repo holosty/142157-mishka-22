@@ -4,27 +4,128 @@
 
 .offer__wrapper {
   @include wrapper-m;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+    grid-template-rows: 153px;
+  }
+}
+
+.offer__heading {
+  @media (min-width: $medium) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large) {
+    z-index: 1;
+  }
 }
 
 .offer__title {
+  margin: 0;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $medium) {
+    margin-top: 39.5px;
+    margin-bottom: 37.5px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large) {
+    order: 2;
+    margin-top: 61px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    margin-right: auto;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .offer__hint {
+  margin: 0;
   font-size: 17px;
   color: $color-green;
   text-transform: uppercase;
+
+  @media (min-width: $medium) {
+    margin-top: 46px;
+    margin-right: 13px;
+    width: 100px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $large) {
+    margin-top: 69px;
+    margin-left: 32px;
+  }
+}
+
+.offer__content {
+  @media (min-width: $medium) {
+    grid-row: 2 / 3;
+    margin-right: 42px;
+  }
+
+  @media (min-width: $large) {
+    margin-right: 58px;
+    margin-left: 175px;
+  }
 }
 
 .offer__desc {
   @include font-normal;
+  margin: 0;
   line-height: 24px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    margin-bottom: 48px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 60px;
+  }
 }
 
 .offer__img {
   background-color: $color-background-img;
+
+  @media (min-width: $medium) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+
+  @media (min-width: $large) {
+    grid-row: 1 / 4;
+  }
+}
+
+.offer__inner {
+  @media (min-width: $medium) {
+    grid-row: 3 / 4;
+    align-self: end;
+    margin-right: 42px;
+  }
+
+  @media (min-width: $large) {
+    margin-right: 58px;
+    margin-left: 175px;
+  }
 }
 
 .offer__price {
@@ -40,4 +141,8 @@
   padding-bottom: 14px;
   font-size: 18px;
   line-height: 20px;
+
+  @media (min-width: $medium) {
+    font-size: 17px;
+  }
 }

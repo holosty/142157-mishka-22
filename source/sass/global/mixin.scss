@@ -20,3 +20,14 @@
   width: auto;
   padding: 0 30px;
 }
+
+@mixin wrapper-l {
+  width: auto;
+  padding: 0 50px;
+}
+
+@mixin wrapper-xl {
+  width: 1150px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
