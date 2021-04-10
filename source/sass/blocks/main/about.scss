@@ -4,17 +4,55 @@
 
 .about__wrapper {
   @include wrapper-m;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+  }
 }
 
 .about__title {
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 41.5px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 39px;
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
   @include list;
+
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large) {
+    margin-right: 175px;
+    margin-left: 175px;
+  }
 }
 
 .about__item {
   font-size: 17px;
+  margin-bottom: 30px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 57px;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

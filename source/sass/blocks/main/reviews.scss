@@ -1,11 +1,65 @@
+.reviews {
+  @media (min-width: $medium) {
+    background-image: url("../img/review-1.png");
+    background-repeat: no-repeat;
+    background-position: left 100%;
+  }
+
+  @media (min-width: $large) {
+    background-image: none;
+  }
+}
+
 .reviews__wrapper {
   @include wrapper-m;
+  margin-bottom: 45px;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+    margin-bottom: 85px;
+  }
+}
+
+.reviews__inner {
+  @media (min-width: $medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $large) {
+    background-image: url("../img/review-1.png");
+    background-repeat: no-repeat;
+    background-position: left 100%;
+  }
 }
 
 .reviews__title {
   @include font-bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $medium) {
+    padding-top: 82.5px;
+    padding-bottom: 38.5px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $large) {
+    margin-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__list {
@@ -17,14 +71,21 @@
 }
 
 .reviews__text {
+  margin: 0;
   line-height: 30px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 17px;
+    padding-bottom: 61px;
+  }
 }
 
 .reviews__author-name {
   @include font-bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 0;
 }
 
 .reviews__author-contact {
@@ -35,12 +96,25 @@
 }
 
 .reviews__toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
   text-align: center;
   border: 1px solid $color-light-grey;
+
+  @media (min-width: $medium) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+    border: none;
+  }
 }
 
 .reviews__button-toggle {
   width: 50%;
+  height: 52px;
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: $color-white;
@@ -63,4 +137,15 @@
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 18px;
+
+  @media (min-width: $medium) {
+    margin-top: 82.5px;
+    padding-right: 24px;
+    padding-left: 24px;
+    align-self: baseline;
+  }
+}
+
+.reviews-no-js {
+  display: none;
 }

@@ -4,4 +4,39 @@
 
 .page-footer__wrapper {
   @include wrapper-m;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: block;
+  }
+}
+
+.page-footer__social {
+  padding-top: 25px;
+  padding-bottom: 27px;
+}
+
+.page-footer__copyright {
+  border-top: 1px solid $color-footer-grey;
+
+  @media (min-width: $medium) {
+    border: none;
+  }
 }

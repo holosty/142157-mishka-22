@@ -13,15 +13,16 @@
   <body class="page__body">
 
     <header class="page-header">
-      <div class="page-header__logo logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип с надписью Мишка.">
-        </a>
-      </div>
 
       <nav class="main-nav">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
+          <div class="main-nav__logo logo">
+            <a class="logo__link" href="index.html">
+              <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип с надписью Мишка.">
+            </a>
+          </div>
+
           <ul class="main-nav__list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link" href="catalog.html">Каталог товаров</a>
@@ -31,11 +32,13 @@
             </li>
           </ul>
 
-          <div class="main-nav__search search">
-            <a class="search__link" href="#">Поиск по сайту</a>
-          </div>
-          <div class="main-nav__basket basket">
-            <a class="basket__link" href="#">Корзина: пока пуста</a>
+          <div class="main-nav__inner">
+            <div class="main-nav__search search">
+              <a class="search__link" href="#">Поиск по сайту</a>
+            </div>
+            <div class="main-nav__basket basket">
+              <a class="basket__link" href="#">Корзина: пока пуста</a>
+            </div>
           </div>
 
           <ul class="main-nav__submenu submenu-list">
@@ -180,7 +183,7 @@
       <div class="modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
         <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
-          <fieldset>
+          <fieldset class="modal__fieldset">
             <legend class="modal__legend">Выберите размер:</legend>
             <label class="modal__label" for="size-s">s</label>
             <input type="checkbox" id="size-s" name="size-s" checked>

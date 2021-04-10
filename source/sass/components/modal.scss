@@ -1,22 +1,52 @@
 .modal {
+  margin: 0 auto;
+  max-width: 566px;
   background-color: $color-white;
   text-align: center;
+  border: 1px solid $color-border-modal;
+  box-shadow: 0 5px 10px fade-out($color-black, 0.25);
 }
 
 .modal__wrapper {
   @include wrapper-m;
+  padding-top: 28.5px;
+  padding-bottom: 46px;
+
+  @media (min-width: $medium) {
+    padding-top: 31.5px;
+  }
 }
 
 .modal__title {
   @include font-bold;
+  margin: 0;
+  margin-bottom: 14px;
   font-size: 25px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $medium) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__fieldset {
+  margin: 0;
+  margin-bottom: 31px;
+  padding: 0;
+  border: none;
 }
 
 .modal__legend {
+  margin-bottom: 19.5px;
   line-height: 30px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 17px;
+  }
 }
 
 .modal__label {
