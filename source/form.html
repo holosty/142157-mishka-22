@@ -55,11 +55,13 @@
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Вязание на заказ</h1>
+      <h1 class="page-main__title page-main__title--indent-s">Вязание на заказ</h1>
       <form class="main-form" action="https://echo.htmlacademy.ru" method="POST" target="_blank">
         <div class="main-form__inner">
           <p class="main-form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <fieldset class="main-form__fieldset">
+        </div>
+        <fieldset class="main-form__fieldset">
+          <div class="main-form__inner">
             <legend class="main-form__legend">Тип</legend>
             <ul class="main-form__list">
               <li class="main-form__item">
@@ -71,13 +73,14 @@
                 <label class="main-form__label" for="type-2">Детская игрушка</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
+        </fieldset>
         </div>
 
         <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
           <div class="main-form__inner">
             <legend class="main-form__legend">Цвет</legend>
-            <ul class="main-form__list">
+            <ul class="main-form__list main-form__list-grid">
               <li class="main-form__item">
                 <input class="main-form__input-checkbox" type="checkbox" name="color-white" id="color-1" checked>
                 <label class="main-form__label" for="color-1">Белый</label>
@@ -110,16 +113,16 @@
           <div class="main-form__inner">
             <legend class="main-form__legend">ФИО</legend>
             <ul class="main-form__list">
-              <li class="main-form__item">
-                <label for="user-name">Имя:</label>
+              <li class="main-form__item main-form__item--indent-right">
+                <label class="main-form__label" for="user-name">Имя:</label>
                 <input class="main-form__input" type="text" name="name" id="user-name" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="main-form__item">
-                <label for="user-surname">Фамилия:</label>
+              <li class="main-form__item main-form__item--indent-right">
+                <label class="main-form__label" for="user-surname">Фамилия:</label>
                 <input class="main-form__input" type="text" name="surname" id="user-surname" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="main-form__item">
-                <label for="user-patronymic">Отчество:</label>
+              <li class="main-form__item main-form__item--indent-right">
+                <label class="main-form__label" for="user-patronymic">Отчество:</label>
                 <input class="main-form__input" type="text" name="patronymic" id="user-patronymic" placeholder="Отчество, если желаете">
               </li>
             </ul>
@@ -129,25 +132,31 @@
         <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
           <div class="main-form__inner">
             <legend class="main-form__legend">Тел</legend>
-            <label for="user-fone"><span class="visually-hidden">Телефон:</span></label>
-            <input class="main-form__input main-form__input--indent-bottom" type="tel" name="telephone" id="user-fone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <label class="main-form__label--indent-right" for="user-fone"><span class="visually-hidden">Телефон:</span>
+              <input class="main-form__input main-form__input--indent-bottom" type="tel" name="telephone" id="user-fone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </label>
           </div>
         </fieldset>
 
         <fieldset class="main-form__fieldset main-form__fieldset--theme-grey">
           <div class="main-form__inner">
             <legend class="main-form__legend">E-mail</legend>
-            <label for="user-email"><span class="visually-hidden">E-mail:</span></label>
-            <input class="main-form__input main-form__input--indent-bottom" type="email" name="email" id="user-email" placeholder="Ваш Email*" required>
+            <label class="main-form__label--indent-right" for="user-email"><span class="visually-hidden">E-mail:</span>
+              <input class="main-form__input main-form__input--indent-bottom" type="email" name="email" id="user-email" placeholder="Ваш Email*" required>
+            </label>
           </div>
         </fieldset>
 
-        <div class="main-form__inner">
-          <fieldset class="main-form__fieldset">
+
+        <fieldset class="main-form__fieldset">
+          <div class="main-form__inner">
             <legend class="main-form__legend">Доп</legend>
-            <label for="user-text"><span class="visually-hidden">Пожелание к заказу:</span></label>
-            <textarea class="main-form__textarea" name="text" id="user-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
+            <label class="main-form__label--indent-right" for="user-text"><span class="visually-hidden">Пожелание к заказу:</span>
+              <textarea class="main-form__textarea" name="text" id="user-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <div class="main-form__inner-control">
           <small class="main-form__correction">*Поля обязательны для заполнения</small>
           <button class="main-form__button button" type="submit">Отправить заказ</button>
         </div>
