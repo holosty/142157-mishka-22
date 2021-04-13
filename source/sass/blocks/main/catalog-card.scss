@@ -1,9 +1,27 @@
-.card__link {
+.card {
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card__link,
+.card__link-img {
   display: block;
   line-height: 0;
 }
 
+.card__link-img {
+  background-color: $color-grey;
+}
+
 .card__inner {
+  display: flex;
+  flex-direction: column;
   padding: 27px 28px 0;
   border: 1px solid $color-light-grey;
 }
@@ -15,6 +33,10 @@
   color: $color-black;
   margin: 0;
   margin-bottom: 6px;
+
+  @media (min-width: $medium) {
+    font-size: 20px;
+  }
 }
 
 .card__desc {
@@ -22,6 +44,17 @@
   font-size: 13px;
   line-height: 30px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 15px;
+  }
+}
+
+.card__price-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card__price {
@@ -30,4 +63,8 @@
   margin: 0;
   padding-top: 22.5px;
   padding-bottom: 26.5px;
+
+  @media (min-width: $medium) {
+    font-size: 17px;
+  }
 }

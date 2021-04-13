@@ -1,9 +1,27 @@
 .catalog__wrapper {
   @include wrapper-m;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+  }
 }
 
 .catalog__list {
   @include list;
+
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: $large) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 51px;
+  }
 }
 
 .catalog__item {
