@@ -2,8 +2,42 @@
   @include font-bold;
 }
 
-.main-form__inner {
+.main-form__inner,
+.main-form__inner-control {
   @include wrapper-m;
+
+  @media (min-width: $medium) {
+    @include wrapper-l;
+  }
+
+  @media (min-width: $large) {
+    @include wrapper-xl;
+  }
+}
+
+.main-form__inner {
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  @media (min-width: $large) {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+.main-form__inner-control {
+  @media (min-width: $medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $large) {
+    padding: 0 225px;
+  }
 }
 
 .main-form__desc {
@@ -11,12 +45,26 @@
   font-size: 13px;
   line-height: 24px;
   color: $color-dark-grey;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $medium) {
+    grid-column: 1 / -1;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .main-form__fieldset {
   margin: 0;
   padding: 0;
   border: none;
+
+  &--theme-grey {
+    @media (min-width: $medium) {
+      background-color: $color-grey;
+    }
+  }
 }
 
 .main-form__legend {
@@ -31,11 +79,19 @@
   text-transform: uppercase;
   white-space: nowrap;
 
+  @media (min-width: $medium) {
+    display: block;
+  }
+
   &::after {
     content: "";
     width: 100%;
     height: 1px;
     background-color: $color-green;
+
+    @media (min-width: $medium) {
+      display: none;
+    }
   }
 }
 
@@ -44,9 +100,36 @@
   margin-bottom: 43px;
 }
 
+.main-form__list-grid {
+  @media (min-width: $medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-form__item--indent-right {
+  @media (min-width: $large) {
+    margin-right: 175px;
+  }
+}
+
 .main-form__label {
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $medium) {
+    font-size: 19px;
+  }
+
+  &--indent-right {
+    @media (min-width: $large) {
+      padding-right: 175px;
+    }
+  }
 }
 
 .main-form__input,
@@ -93,4 +176,9 @@
   width: 100%;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  @media (min-width: $medium) {
+    order: -1;
+    max-width: 230px;
+  }
 }
