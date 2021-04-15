@@ -1,4 +1,30 @@
 .reviews {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-line-desktop.svg");
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+
+    @media (min-width: $medium) {
+      bottom: -82px;
+      height: 17px;
+      background-size: auto 17px;
+    }
+
+    @media (min-width: $large) {
+      height: 23px;
+      background-size: 1050px 23px;
+      background-position-x: center;
+      background-repeat: no-repeat;
+    }
+  }
+
   @media (min-width: $medium) {
     background-image: url("../img/review-1.png");
     background-repeat: no-repeat;
@@ -12,19 +38,20 @@
 
 .reviews__wrapper {
   @include wrapper-m;
-  margin-bottom: 45px;
+  padding-bottom: 45px;
+  margin-bottom: 38px;
 
   @media (min-width: $medium) {
     @include wrapper-l;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 128px;
   }
 
   @media (min-width: $large) {
     @include wrapper-xl;
-    margin-bottom: 85px;
+    margin-bottom: 161px;
   }
 }
 
@@ -47,10 +74,11 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $medium) {
     padding-top: 82.5px;
-    padding-bottom: 38.5px;
+    margin-bottom: 38.5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -64,6 +92,15 @@
 
 .reviews__list {
   @include list;
+  margin-bottom: 30px;
+
+  @media (min-width: $medium) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $large) {
+    margin-bottom: 96px;
+  }
 }
 
 .reviews__author-info {
@@ -72,12 +109,13 @@
 
 .reviews__text {
   margin: 0;
+  margin-bottom: 33px;
   line-height: 30px;
   color: $color-dark-grey;
 
   @media (min-width: $medium) {
     font-size: 17px;
-    padding-bottom: 61px;
+    margin-bottom: 61px;
   }
 }
 
@@ -101,14 +139,16 @@
   justify-content: space-between;
   margin: 0;
   text-align: center;
-  border: 1px solid $color-light-grey;
 
   @media (min-width: $medium) {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 47px;
     width: 175px;
-    border: none;
+  }
+
+  @media (min-width: $large) {
+    bottom: 96px;
   }
 }
 
@@ -118,7 +158,21 @@
   padding-top: 13px;
   padding-bottom: 13px;
   background-color: $color-white;
-  border: none;
+  border: 1px solid $color-light-grey;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $medium) {
+    border: none;
+  }
 
   &--left {
     background-image: url("../img/huge-arrow-left.svg");
@@ -130,6 +184,7 @@
     background-image: url("../img/huge-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
+    border-left: none;
   }
 }
 

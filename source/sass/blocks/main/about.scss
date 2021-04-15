@@ -4,17 +4,22 @@
 
 .about__wrapper {
   @include wrapper-m;
+  margin-bottom: 58px;
 
   @media (min-width: $medium) {
     @include wrapper-l;
+    margin-bottom: 82px;
   }
 
   @media (min-width: $large) {
     @include wrapper-xl;
+    margin-bottom: 90px;
   }
 }
 
 .about__title {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 25px;
   line-height: 30px;
 
@@ -35,7 +40,7 @@
 .about__list {
   @include list;
 
-  @media (min-width: $medium) {
+  @media (min-width: 520px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -48,10 +53,84 @@
 
 .about__item {
   font-size: 17px;
-  margin-bottom: 30px;
+
+  &--icon-1 {
+    margin-bottom: 30px;
+    padding-top: 56px;
+    background-image: url("../img/about/icon-1.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 38px;
+    background-position-x: 8px;
+
+    @media (min-width: $medium) {
+      margin-bottom: 57px;
+    }
+  }
+
+  &--icon-3 {
+    margin-bottom: 35px;
+    padding-top: 53px;
+    background-image: url("../img/about/icon-3.svg");
+    background-repeat: no-repeat;
+    background-size: 47px 27px;
+
+    @media (min-width: $medium) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-bottom: 63px;
+    }
+  }
+
+  &--icon-5 {
+    margin-bottom: 32px;
+    padding-top: 48px;
+    background-image: url("../img/about/icon-5.svg");
+    background-repeat: no-repeat;
+    background-size: 34px 27px;
+    background-position-x: 7px;
+
+    @media (min-width: $medium) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      margin-bottom: 0;
+    }
+  }
+
+  &--icon-2 {
+    margin-bottom: 33px;
+    padding-top: 51px;
+    background-image: url("../img/about/icon-2.svg");
+    background-repeat: no-repeat;
+    background-size: 35px 34px;
+    background-position-x: 3px;
+
+    @media (min-width: $medium) {
+      margin-bottom: 59px;
+    }
+  }
+
+  &--icon-4 {
+    margin-bottom: 32px;
+    padding-top: 49px;
+    background-image: url("../img/about/icon-4.svg");
+    background-repeat: no-repeat;
+    background-size: 55px 23px;
+    background-position-x: -6px;
+
+    @media (min-width: $medium) {
+      margin-bottom: 58px;
+    }
+  }
+
+  &--icon-6 {
+    padding-top: 52px;
+    background-image: url("../img/about/icon-6.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 32px;
+    background-position-x: 3px;
+  }
 
   @media (min-width: $medium) {
-    margin-bottom: 57px;
     font-size: 20px;
     line-height: 22px;
   }

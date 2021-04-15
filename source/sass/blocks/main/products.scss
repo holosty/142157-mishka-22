@@ -1,5 +1,6 @@
 .products {
   @include font-bold;
+  position: relative;
   background-image: url("../img/hero-mobile@2x-1.jpg");
   background-repeat: no-repeat;
   background-color: $color-background-img;
@@ -12,10 +13,29 @@
   @media (min-width: $large) {
     background-image: url("../img/hero-desktop-1.jpg");
   }
+
+  &::after {
+    @media (min-width: $medium) {
+      position: absolute;
+      bottom: -1px;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      background-size: auto 24px;
+    }
+
+    @media (min-width: $large) {
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
 }
 
 .products__wrapper {
   @include wrapper-m;
+  margin-bottom: 31px;
 
   @media (min-width: $medium) {
     @include wrapper-l;
@@ -60,14 +80,6 @@
 .products__item {
   margin: 0 -30px;
 
-  &--theme-green {
-    background-color: $color-green;
-  }
-
-  &--theme-dark-green {
-    background-color: $color-dark-green;
-  }
-
   @media (min-width: $medium) {
     margin: 0;
     width: 50%;
@@ -75,13 +87,42 @@
 }
 
 .products__link {
+  position: relative;
   display: block;
-  margin-left: 30px;
+  padding-left: 30px;
   padding-top: 24px;
   padding-bottom: 31px;
   font-size: 19px;
   line-height: 24px;
   color: $color-white;
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 36px;
+
+    @media (min-width: $medium) {
+      padding-bottom: 39px;
+    }
+  }
+
+  &--theme-green {
+    background-color: $color-green;
+
+    &:hover,
+    &:active {
+      background-color: $color-light-green;
+    }
+  }
+
+  &--theme-dark-green {
+    background-color: $color-dark-green;
+
+    &:hover,
+    &:active {
+      background-color: $color-light-dark-green;
+    }
+  }
 
   @media (min-width: $medium) {
     padding-top: 25px;
@@ -89,4 +130,54 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.products__link--interior::before {
+  content: "";
+  position: absolute;
+  right: 36px;
+  width: 40px;
+  height: 62px;
+  background-image: url("../img/interior.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.products__link--interior:hover::before,
+.products__link--interior:focus::before {
+  opacity: 0.7;
+}
+
+.products__link--interior:active::before {
+  opacity: 0.3;
+}
+
+.products__link--toys::before {
+  content: "";
+  position: absolute;
+  right: 27px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/toy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+
+  @media (min-width: $medium) {
+    right: 33px;
+  }
+
+  @media (min-width: $large) {
+    right: 35px;
+  }
+}
+
+.products__link--toys:hover::before,
+.products__link--toys:focus::before {
+  opacity: 0.7;
+}
+
+.products__link--toys:active::before {
+  opacity: 0.3;
 }

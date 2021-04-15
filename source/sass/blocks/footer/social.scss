@@ -1,5 +1,19 @@
 .social__list {
   @include list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: $color-light-dark-green;
+}
+
+.social__link:active .social__icon {
+  fill: $color-light-dark-green;
+  fill-opacity: 0.3;
 }
