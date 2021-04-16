@@ -1,8 +1,8 @@
 .page-header {
   background-color: $color-white;
+  border-bottom: 1px solid $color-light-grey;
 
   @media (min-width: $medium) {
     height: 89px;
-    border-bottom: 1px solid $color-light-grey;
   }
 }
