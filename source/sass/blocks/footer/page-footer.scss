@@ -13,10 +13,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 26px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: $large) {
     @include wrapper-xl;
+    padding-top: 26px;
+    padding-bottom: 31px;
   }
 }
 
@@ -28,7 +32,26 @@
   }
 }
 
+.page-footer__logo-link:hover .page-footer__logo-icon,
+.page-footer__logo-link:focus .page-footer__logo-icon {
+  fill: $color-light-dark-green;
+  fill-opacity: 1;
+}
+
+.page-footer__logo-link:active .page-footer__logo-icon {
+  fill: $color-light-dark-green;
+  fill-opacity: 0.3;
+}
+
+.page-footer__logo-link:not([href]) .page-footer__logo-icon,
+.page-footer__logo-link:not([href]):hover .page-footer__logo-icon {
+  fill: $color-black;
+  fill-opacity: 1;
+}
+
 .page-footer__social {
+  align-self: center;
+  width: 142px;
   padding-top: 25px;
   padding-bottom: 27px;
 }

@@ -1,3 +1,45 @@
 .basket__link {
+  position: relative;
+  display: block;
+  padding-top: 28.5px;
+  padding-bottom: 26.5px;
+  padding-left: 76px;
   color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: fade-out($color-black, 0.4);
+  }
+
+  &:active {
+    color: fade-out($color-black, 0.7);
+  }
+
+  @media (min-width: $medium) {
+    padding-top: 32.5px;
+    padding-bottom: 31.5px;
+    padding-left: 0;
+  }
+}
+
+.basket__icon {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  fill-opacity: 0.2;
+
+  @media (min-width: $medium) {
+    top: 35px;
+  }
+}
+
+.basket__link:hover .basket__icon,
+.basket__link:focus .basket__icon {
+  fill: $color-green;
+  fill-opacity: 1;
+}
+
+.basket__link:active .basket__icon {
+  fill: $color-green;
+  fill-opacity: 0.3;
 }

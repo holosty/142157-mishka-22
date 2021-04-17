@@ -4,12 +4,14 @@
   @media (min-width: $medium) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $large) {
     @include wrapper-xl;
+    flex-direction: row;
     margin-bottom: 105px;
   }
 }
@@ -34,28 +36,51 @@
   line-height: 30px;
   margin: 0;
   margin-bottom: 28px;
+  position: relative;
 
   @media (min-width: $medium) {
-    grid-column: 1 / -1;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 49px;
+
+    &::before {
+      position: absolute;
+      top: -22px;
+      right: 0;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag.svg");
+      background-repeat: no-repeat;
+      background-size: 47px 81px;
+    }
   }
 
   @media (min-width: $large) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 34.5px;
+    padding-top: 70px;
+
+    &::before {
+      top: 58px;
+      left: -112px;
+    }
   }
 }
 
 .contacts__inner {
   @media (min-width: $medium) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
 .contacts__info {
   display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 30px;
   color: $color-dark-grey;
@@ -64,17 +89,33 @@
     font-size: 17px;
   }
 
-  @media (min-width: $large) {
-    grid-column: 1 / -1;
+  &--email {
+    margin-bottom: 34px;
+  }
+
+  &--address {
+    margin-bottom: 62px;
   }
 }
 
 .contacts__title-info {
   margin: 0;
+  margin-right: 30px;
 }
 
 .contacts__text-link {
   color: $color-dark-grey;
+  border-bottom: 1px solid $color-green;
+
+  &:hover,
+  &:focus {
+    color: $color-light-dark-green;
+  }
+
+  &:active {
+    color: $color-light-dark-green;
+    border-bottom: 1px solid transparent;
+  }
 }
 
 .contacts__text-info {
@@ -82,10 +123,33 @@
 }
 
 .contacts__img {
+  position: relative;
+  margin-bottom: 41px;
+  overflow: hidden;
+
+  @media (min-width: $medium) {
+    margin-bottom: 55px;
+  }
+
   @media (min-width: $large) {
     flex-basis: 50%;
     max-height: 457px;
-    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 67px;
+    height: 100px;
+    background-image: url("../img/map-pin.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 100px;
   }
 }
 

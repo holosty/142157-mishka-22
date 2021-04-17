@@ -1,11 +1,22 @@
 .table-property {
+  width: 100%;
   color: $color-dark-grey;
   border: none;
   border-collapse: collapse;
   border-spacing: unset;
 }
 
+.table-property__row {
+  border-bottom: 1px solid $color-light-grey;
+}
+
 .table-property__cell {
+  padding-top: 7px;
+  padding-bottom: 12px;
   font-weight: normal;
   text-align: left;
+}
+
+.table-property__cell-td {
+  padding-left: 31px;
 }

@@ -7,6 +7,23 @@
   }
 }
 
+.submenu-list__item {
+  &:nth-child(1) {
+    margin-right: 61.5px;
+  }
+}
+
 .submenu-list__link {
+  display: block;
+  padding-top: 20px;
   color: $color-black;
+
+  &:hover,
+  &:focus {
+    color: fade-out($color-black, 0.4);
+  }
+
+  &:active {
+    color: fade-out($color-black, 0.7);
+  }
 }

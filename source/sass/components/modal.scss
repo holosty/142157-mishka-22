@@ -1,16 +1,42 @@
 .modal {
-  margin: 0 auto;
-  max-width: 566px;
-  background-color: $color-white;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: fade-out($color-white, 0.1);
   text-align: center;
-  border: 1px solid $color-border-modal;
-  box-shadow: 0 5px 10px fade-out($color-black, 0.25);
+  z-index: 10;
+}
+
+.modal-show-js {
+  display: block;
+}
+
+.modal__form {
+  @media (min-width: $medium) {
+    padding-right: 78px;
+    padding-left: 78px;
+  }
 }
 
 .modal__wrapper {
   @include wrapper-m;
   padding-top: 28.5px;
   padding-bottom: 46px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 566px;
+  max-height: 366px;
+  margin: auto;
+  background-color: $color-white;
+  border: 1px solid $color-border-modal;
+  box-shadow: 0 5px 10px fade-out($color-black, 0.25);
+  z-index: 20;
 
   @media (min-width: $medium) {
     padding-top: 31.5px;
@@ -37,6 +63,10 @@
   margin-bottom: 31px;
   padding: 0;
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 7px;
 }
 
 .modal__legend {
@@ -54,6 +84,23 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+  flex-grow: 1;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 2px solid fade-out($color-dark-grey, 0.9);
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid fade-out($color-dark-grey, 0.7);
+  }
+}
+
+.modal__input-checkbox:focus + .modal__label {
+  border: 2px solid fade-out($color-dark-grey, 0.7);
+}
+
+.modal__input-checkbox:checked + .modal__label {
+  border: 2px solid $color-green;
 }
 
 .modal__button {

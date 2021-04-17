@@ -6,6 +6,7 @@
 }
 
 .copyright__text {
+  margin-right: 27px;
   padding-top: 29px;
   padding-bottom: 32px;
   font-size: 19px;
@@ -23,8 +24,19 @@
     position: absolute;
     width: 27px;
     height: 34px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    mask-image: url("../img/htmlacademy.svg");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-green;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $color-light-dark-green;
+  }
+
+  &:active::before {
+    background-color: $color-light-dark-green;
+    opacity: 0.3;
   }
 }
