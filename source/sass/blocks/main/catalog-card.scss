@@ -1,11 +1,11 @@
 .card {
   @media (min-width: $medium) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
   }
 
   @media (min-width: $large) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
@@ -17,6 +17,16 @@
 
 .card__link-img {
   background-color: $color-grey;
+
+  @media (min-width: $medium) {
+    width: 50%;
+    min-height: 334px;
+  }
+
+  @media (min-width: $large) {
+    width: 100%;
+    min-height: 462px;
+  }
 }
 
 .card__inner {
@@ -24,6 +34,15 @@
   flex-direction: column;
   padding: 27px 28px 0;
   border: 1px solid $color-light-grey;
+
+  @media (min-width: $medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $large) {
+    width: 100%;
+    flex-grow: 1;
+  }
 }
 
 .card__title {
