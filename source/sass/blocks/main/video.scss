@@ -3,7 +3,6 @@
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 58px;
-  border: 1px solid $color-light-grey;
 
   @media (min-width: $medium) {
     @include wrapper-l;
@@ -11,13 +10,27 @@
     margin-right: auto;
     margin-bottom: 64px;
     display: grid;
-    border: none;
   }
 
   @media (min-width: $large) {
-    @include wrapper-xl;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
     grid-template-columns: 4fr 2fr;
     margin-bottom: 105px;
+  }
+
+  &:hover,
+  &:focus-within {
+    @media (min-width: $medium) {
+      box-shadow: 0 6px 10px fade-out($color-black, 0.9);
+    }
+  }
+
+  &:active {
+    @media (min-width: $large) {
+      box-shadow: 0 3px 5px fade-out($color-black, 0.9);
+    }
   }
 }
 
@@ -25,54 +38,123 @@
   @include font-bold;
   font-size: 17px;
   line-height: 24px;
-  margin-top: 21.5px;
-  margin-bottom: 26.5px;
+  position: relative;
+  margin: 0;
+  padding-top: 21.5px;
+  padding-right: 13px;
+  padding-bottom: 26.5px;
+  padding-left: 91px;
+  border: 1px solid $color-light-grey;
+  border-bottom: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 34px;
+    margin: auto 0;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 22px;
+
+    @media (min-width: $medium) {
+      top: 39px;
+      left: 42px;
+      margin: 0;
+    }
+
+    @media (min-width: $large) {
+      top: 47px;
+      left: 79px;
+    }
+  }
 
   @media (min-width: $medium) {
     margin: 0;
     padding-top: 41px;
     padding-bottom: 24.5px;
-    padding-left: 42px;
+    padding-left: 107px;
     grid-row: 2/3;
-    border: 1px solid #ececec;
-    border-bottom: none;
     font-size: 20px;
   }
 
   @media (min-width: $large) {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding-left: 57px;
+    padding-top: 96px;
+    padding-left: 79px;
     padding-right: 57px;
+    border-left: none;
   }
 }
 
 .video__container {
-  display: block;
-  width: 100%;
+  position: relative;
+  line-height: 0;
   background-color: $color-grey;
+
+  @media (min-width: $medium) {
+    min-height: 455px;
+  }
 
   @media (min-width: $large) {
     grid-row: 1/3;
+    max-width: 683px;
+  }
+}
+
+.video__block {
+  width: 100%;
+}
+
+.video__play-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  width: 101px;
+  height: 77px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.7;
   }
 }
 
 .video__inner {
   padding: 35px 34px 33px;
+  border: 1px solid $color-light-grey;
+  border-top: none;
 
   @media (min-width: $medium) {
     padding-top: 0;
     padding-left: 42px;
     padding-right: 42px;
-    border: 1px solid $color-light-grey;
-    border-top: none;
   }
 
   @media (min-width: $large) {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding-left: 57px;
+    padding-left: 79px;
     padding-right: 57px;
+    width: 367px;
+    border-left: none;
   }
 }
 

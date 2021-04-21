@@ -3,10 +3,12 @@
 
   @media (min-width: $medium) {
     @include wrapper-l;
+    margin-bottom: 23px;
   }
 
   @media (min-width: $large) {
     @include wrapper-xl;
+    margin-bottom: 27px;
   }
 }
 

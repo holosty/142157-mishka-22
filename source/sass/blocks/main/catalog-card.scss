@@ -9,6 +9,19 @@
   }
 }
 
+.card:hover .card__inner,
+.card:focus-within {
+  @media (min-width: $large) {
+    box-shadow: 0 6px 10px fade-out($color-black, 0.9);
+  }
+}
+
+.card:active .card__inner {
+  @media (min-width: $large) {
+    box-shadow: 0 3px 5px fade-out($color-black, 0.9);
+  }
+}
+
 .card__link,
 .card__link-img {
   display: block;
@@ -53,6 +66,15 @@
   margin: 0;
   margin-bottom: 6px;
 
+  &:hover,
+  &:focus {
+    color: fade-out($color-black, 0.4);
+  }
+
+  &:active {
+    color: fade-out($color-black, 0.7);
+  }
+
   @media (min-width: $medium) {
     font-size: 20px;
   }
@@ -60,6 +82,7 @@
 
 .card__desc {
   margin: 0;
+  margin-bottom: 17.5px;
   font-size: 13px;
   line-height: 30px;
   color: $color-dark-grey;
@@ -72,8 +95,10 @@
 .card__price-container {
   margin-top: auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $color-light-grey;
 }
 
 .card__price {
@@ -86,4 +111,29 @@
   @media (min-width: $medium) {
     font-size: 17px;
   }
+}
+
+.card__button {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 19px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card__button-icon {
+  fill-opacity: 0.2;
+}
+
+.card__button:hover .card__button-icon,
+.card__button:focus .card__button-icon {
+  fill: $color-green;
+  fill-opacity: 1;
+}
+
+.card__button:active .card__button-icon {
+  fill: $color-green;
+  fill-opacity: 0.3;
 }
