@@ -288,7 +288,7 @@
   left: -48px;
   width: 18px;
   height: 18px;
-  background-color: $color-green;
+  background-color: $color-input-green;
   border-radius: 50%;
 
   @media (min-width: $medium) {
@@ -336,7 +336,7 @@
 .main-form__input-radio:focus + .main-form__label--radio::before,
 .main-form__label--checkbox:hover::before,
 .main-form__input-checkbox:focus + .main-form__label--checkbox::before {
-  border: 2px solid $color-green;
+  border: 2px solid $color-input-green;
 }
 
 .main-form__label--radio:active::before,
@@ -373,7 +373,7 @@
   &:hover,
   &:focus,
   &:active {
-    box-shadow: inset 0 -2px 0 $color-green;
+    box-shadow: inset 0 -2px 0 $color-input-green;
   }
 
   &--indent-bottom {
@@ -435,7 +435,7 @@
 .main-form__input:hover + .main-form__phone-icon,
 .main-form__input:focus + .main-form__phone-icon {
   fill-opacity: 1;
-  fill: $color-green;
+  fill: $color-input-green;
 }
 
 .main-form__email-icon {
@@ -457,7 +457,7 @@
 .main-form__input:hover + .main-form__email-icon,
 .main-form__input:focus + .main-form__email-icon {
   fill-opacity: 1;
-  fill: $color-green;
+  fill: $color-input-green;
 }
 
 .main-form__textarea {
@@ -471,7 +471,7 @@
 
   &:hover,
   &:focus {
-    border: 2px solid $color-green;
+    border: 2px solid $color-input-green;
   }
 }
 
