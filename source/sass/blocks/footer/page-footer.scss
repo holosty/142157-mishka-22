@@ -32,6 +32,10 @@
   }
 }
 
+.page-footer__logo-link {
+  display: block;
+}
+
 .page-footer__logo-link:hover .page-footer__logo-icon,
 .page-footer__logo-link:focus .page-footer__logo-icon {
   fill: $color-light-dark-green;
