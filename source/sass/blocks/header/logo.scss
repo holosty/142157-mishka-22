@@ -1,5 +1,9 @@
 .logo {
   padding: 22px 0;
+
+  @media (min-width: $medium) {
+    padding: 0;
+  }
 }
 
 .logo__link {
@@ -19,13 +23,32 @@
 
   @media (min-width: $medium) {
     margin: 0;
+    width: 114px;
+    height: 46px;
   }
 
   @media (min-width: $large) {
     margin: 0 auto;
+    width: 149px;
+    height: 72px;
   }
 }
 
 .logo__link:not([href]) {
   opacity: 1;
+}
+
+.logo__img {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $medium) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $large) {
+    width: 149px;
+    height: 72px;
+  }
 }

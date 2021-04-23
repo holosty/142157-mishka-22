@@ -26,9 +26,13 @@
   }
 
   @media (min-width: $medium) {
-    background-image: url("../img/review-1.png");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
-    background-position: left 100%;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: $large) {
@@ -63,9 +67,13 @@
   }
 
   @media (min-width: $large) {
-    background-image: url("../img/review-1.png");
+    background-image: url("../img/review.jpg");
     background-repeat: no-repeat;
-    background-position: left 100%;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 }
 

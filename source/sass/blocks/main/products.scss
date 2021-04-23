@@ -1,23 +1,37 @@
 .products {
   @include font-bold;
   position: relative;
-  background-image: url("../img/hero-mobile@2x-1.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-color: $color-background-img;
-  background-position: top center;
+  background-position: center top;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: auto 373px;
+  }
 
   @media (min-width: $medium) {
-    background-image: url("../img/hero-desktop-2.jpg");
+    background-image: url("../img/hero-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: auto 746px;
+    }
   }
 
   @media (min-width: $large) {
-    background-image: url("../img/hero-desktop-1.jpg");
+    background-image: url("../img/hero-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   &::after {
     @media (min-width: $medium) {
       position: absolute;
-      bottom: -1px;
+      bottom: -12px;
       content: "";
       width: 100%;
       height: 24px;
@@ -27,6 +41,7 @@
     }
 
     @media (min-width: $large) {
+      bottom: -17px;
       height: 34px;
       background-size: auto 34px;
     }
@@ -49,7 +64,7 @@
 
 .products__title {
   margin: 0;
-  padding-top: 73px;
+  padding-top: 90px;
   padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
@@ -65,6 +80,12 @@
   @media (min-width: $large) {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.products__title br:nth-child(1) {
+  @media (min-width: $medium) {
+    display: none;
   }
 }
 
