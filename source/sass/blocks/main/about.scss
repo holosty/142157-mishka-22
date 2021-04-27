@@ -105,7 +105,7 @@
     background-position-x: 3px;
 
     @media (min-width: $medium) {
-      margin-bottom: 59px;
+      padding-top: 57px;
     }
   }
 
@@ -118,12 +118,12 @@
     background-position-x: -6px;
 
     @media (min-width: $medium) {
-      margin-bottom: 58px;
+      padding-top: 54px;
     }
   }
 
   &--icon-6 {
-    padding-top: 52px;
+    padding-top: 50px;
     background-image: url("../img/about/icon-6.svg");
     background-repeat: no-repeat;
     background-size: 33px 32px;

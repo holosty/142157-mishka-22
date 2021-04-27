@@ -22,7 +22,7 @@
 
   &:hover,
   &:focus-within {
-    @media (min-width: $medium) {
+    @media (min-width: $large) {
       box-shadow: 0 6px 10px fade-out($color-black, 0.9);
     }
   }

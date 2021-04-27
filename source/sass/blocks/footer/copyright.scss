@@ -14,29 +14,18 @@
 }
 
 .copyright__link {
-  position: relative;
   display: block;
   width: 27px;
   height: 34px;
+  fill: $color-green;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    mask-image: url("../img/htmlacademy.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background-color: $color-green;
+  &:hover,
+  &:focus {
+    fill: $color-light-dark-green;
   }
 
-  &:hover::before,
-  &:focus::before {
-    background-color: $color-light-dark-green;
-  }
-
-  &:active::before {
-    background-color: $color-light-dark-green;
-    opacity: 0.3;
+  &:active {
+    fill: $color-light-dark-green;
+    fill-opacity: 0.3;
   }
 }
