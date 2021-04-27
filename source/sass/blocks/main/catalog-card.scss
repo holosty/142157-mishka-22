@@ -29,6 +29,7 @@
 }
 
 .card__link-img {
+  min-height: 195px;
   background-color: $color-grey;
 
   @media (min-width: $medium) {
