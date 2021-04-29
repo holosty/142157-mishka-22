@@ -32,7 +32,7 @@
     }
 
     @media (min-width: $large) {
-      padding-top: 48px;
+      padding-top: 47px;
     }
   }
 
@@ -52,6 +52,16 @@
     @media (min-width: $medium) {
       margin-bottom: 50px;
     }
+
+    @media (min-width: $large) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $large) {
+      padding-top: 50px;
+    }
   }
 }
 
@@ -69,6 +79,7 @@
 
   @media (min-width: $large) {
     padding: 0 225px;
+    margin-bottom: 29px;
   }
 }
 
@@ -127,13 +138,19 @@
     }
 
     @media (min-width: $large) {
-      padding-top: 19px;
+      padding-left: 61px;
+      padding-top: 20px;
     }
   }
 
   &--type {
     @media (min-width: $medium) {
       padding-top: 16px;
+    }
+
+    @media (min-width: $large) {
+      padding-left: 61px;
+      padding-top: 20px;
     }
   }
 
@@ -144,6 +161,10 @@
     @media (min-width: $medium) {
       padding-top: 15px;
     }
+
+    @media (min-width: $large) {
+      padding-left: 60px;
+    }
   }
 
   &--email {
@@ -151,6 +172,10 @@
 
     @media (min-width: $medium) {
       padding-top: 15px;
+    }
+
+    @media (min-width: $large) {
+      padding-left: 60px;
     }
   }
 
@@ -161,6 +186,11 @@
       align-self: self-start;
       padding-top: 19px;
     }
+
+    @media (min-width: $large) {
+      padding-top: 23px;
+      padding-left: 62px;
+    }
   }
 
   &--user {
@@ -169,6 +199,10 @@
 
     @media (min-width: $medium) {
       padding-top: 20px;
+    }
+
+    @media (min-width: $large) {
+      padding-left: 60px;
     }
   }
 
@@ -191,6 +225,17 @@
   @media (min-width: $medium) {
     margin-bottom: 25px;
   }
+
+  @media (min-width: $medium) {
+    margin-bottom: 24px;
+  }
+
+  &--user {
+    @media (min-width: $large) {
+      margin-bottom: 25px;
+      margin-left: 2px;
+    }
+  }
 }
 
 .main-form__list-grid {
@@ -201,7 +246,9 @@
   }
 
   @media (min-width: $large) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 262px);
+    column-gap: 0;
+    margin-bottom: 28px;
   }
 }
 
@@ -281,6 +328,12 @@
       margin-right: 24px;
     }
   }
+
+  &--textarea {
+    @media (min-width: $large) {
+      margin-top: 3px;
+    }
+  }
 }
 
 .main-form__input-radio + .main-form__label::before {
@@ -297,6 +350,10 @@
     width: 50px;
     height: 50px;
   }
+
+  @media (min-width: $large) {
+    left: -79px;
+  }
 }
 
 .main-form__input-radio:checked + .main-form__label::after {
@@ -312,6 +369,10 @@
     left: -63px;
     width: 22px;
     height: 22px;
+  }
+
+  @media (min-width: $large) {
+    left: -65px;
   }
 }
 
