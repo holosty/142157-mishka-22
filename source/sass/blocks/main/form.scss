@@ -433,7 +433,8 @@
 }
 
 .main-form__input:hover + .main-form__phone-icon,
-.main-form__input:focus + .main-form__phone-icon {
+.main-form__input:focus + .main-form__phone-icon,
+.main-form__phone-icon:hover {
   fill-opacity: 1;
   fill: $color-input-green;
 }
@@ -455,7 +456,8 @@
 }
 
 .main-form__input:hover + .main-form__email-icon,
-.main-form__input:focus + .main-form__email-icon {
+.main-form__input:focus + .main-form__email-icon,
+.main-form__email-icon:hover {
   fill-opacity: 1;
   fill: $color-input-green;
 }
