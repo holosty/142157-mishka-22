@@ -109,7 +109,7 @@
   align-items: center;
   column-gap: 22px;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 16px;
   color: $color-green;
@@ -137,7 +137,8 @@
   }
 
   &--fone {
-    margin-bottom: 0;
+    padding-top: 1px;
+    margin-bottom: 5px;
 
     @media (min-width: $medium) {
       padding-top: 15px;
@@ -145,7 +146,7 @@
   }
 
   &--email {
-    margin-bottom: 0;
+    margin-bottom: 4px;
 
     @media (min-width: $medium) {
       padding-top: 15px;
@@ -153,9 +154,16 @@
   }
 
   &--textarea {
+    margin-bottom: 22px;
+
     @media (min-width: $medium) {
       padding-top: 19px;
     }
+  }
+
+  &--user {
+    margin-bottom: 30px;
+    padding-top: 2px;
   }
 
   &::after {
@@ -172,7 +180,7 @@
 
 .main-form__list {
   @include list;
-  margin-bottom: 34.5px;
+  margin-bottom: 31px;
 
   @media (min-width: $medium) {
     margin-bottom: 10px;
@@ -206,7 +214,7 @@
   &--radio {
     padding-top: 11px;
     padding-bottom: 11px;
-    margin-bottom: 11px;
+    margin-bottom: 2px;
 
     @media (min-width: $medium) {
       padding-top: 17px;
@@ -219,6 +227,7 @@
   &--checkbox {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 61px;
     margin-bottom: 23px;
 
     @media (min-width: $medium) {
@@ -269,7 +278,7 @@
 .main-form__input-radio + .main-form__label::before {
   content: "";
   position: absolute;
-  left: -60px;
+  left: -61px;
   width: 42px;
   height: 42px;
   border: 2px solid $color-dark-grey;
@@ -301,7 +310,7 @@
 .main-form__input-checkbox + .main-form__label::before {
   content: "";
   position: absolute;
-  left: -60px;
+  left: -61px;
   width: 38px;
   height: 38px;
   border: 2px solid $color-dark-grey;
@@ -316,7 +325,7 @@
 .main-form__input-checkbox:checked + .main-form__label::after {
   content: "";
   position: absolute;
-  left: -52px;
+  left: -53px;
   width: 23px;
   height: 16px;
   background-image: url("../img/tick.svg");
@@ -480,7 +489,7 @@
 .main-form__correction {
   @include font-normal;
   display: block;
-  margin-top: 17px;
+  margin-top: 13px;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
@@ -489,8 +498,10 @@
 
 .main-form__button {
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 17px;
+  line-height: 16px;
 
   @media (min-width: $medium) {
     order: -1;
