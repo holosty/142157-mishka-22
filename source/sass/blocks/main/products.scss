@@ -4,7 +4,7 @@
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-color: $color-background-img;
-  background-position: center top;
+  background-position: center -17px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
@@ -17,6 +17,7 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: auto 746px;
+      background-position: center;
     }
   }
 
@@ -50,7 +51,7 @@
 
 .products__wrapper {
   @include wrapper-m;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   @media (min-width: $medium) {
     @include wrapper-l;
@@ -58,13 +59,13 @@
 
   @media (min-width: $large) {
     @include wrapper-xl;
-    margin-bottom: 54px;
+    margin-bottom: 70px;
   }
 }
 
 .products__title {
   margin: 0;
-  padding-top: 90px;
+  padding-top: 73px;
   padding-bottom: 120px;
   font-size: 27px;
   line-height: 30px;
@@ -78,6 +79,7 @@
   }
 
   @media (min-width: $large) {
+    padding-bottom: 357px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -148,6 +150,7 @@
   @media (min-width: $medium) {
     padding-top: 25px;
     padding-bottom: 34px;
+    padding-left: 36px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -156,6 +159,7 @@
 .products__link--interior::before {
   content: "";
   position: absolute;
+  top: 23px;
   right: 36px;
   width: 40px;
   height: 62px;
@@ -163,6 +167,10 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
+
+  @media (min-width: $medium) {
+    top: 30px;
+  }
 }
 
 .products__link--interior:hover::before,
@@ -177,6 +185,7 @@
 .products__link--toys::before {
   content: "";
   position: absolute;
+  top: 21px;
   right: 27px;
   width: 60px;
   height: 60px;
@@ -186,6 +195,7 @@
   opacity: 0.5;
 
   @media (min-width: $medium) {
+    top: 31px;
     right: 33px;
   }
 

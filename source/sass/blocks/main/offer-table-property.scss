@@ -18,5 +18,9 @@
 }
 
 .table-property__cell-td {
-  padding-left: 31px;
+  padding-left: 15px;
+
+  @media (min-width: $medium) {
+    padding-left: 0;
+  }
 }
