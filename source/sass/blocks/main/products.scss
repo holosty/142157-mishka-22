@@ -32,7 +32,7 @@
   &::after {
     @media (min-width: $medium) {
       position: absolute;
-      bottom: -12px;
+      bottom: -11px;
       content: "";
       width: 100%;
       height: 24px;
@@ -44,7 +44,8 @@
     @media (min-width: $large) {
       bottom: -17px;
       height: 34px;
-      background-size: auto 34px;
+      background-size: 1250px 34px;
+      background-position: 50% 50%;
     }
   }
 }
@@ -79,7 +80,8 @@
   }
 
   @media (min-width: $large) {
-    padding-bottom: 357px;
+    padding-top: 157px;
+    padding-bottom: 355px;
     font-size: 53px;
     line-height: 57px;
   }

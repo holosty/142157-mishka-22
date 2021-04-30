@@ -31,6 +31,11 @@
   @media (min-width: $medium) {
     top: 35px;
   }
+
+  @media (min-width: $large) {
+    left: 33px;
+    top: 34px;
+  }
 }
 
 .basket__link:hover .basket__icon,

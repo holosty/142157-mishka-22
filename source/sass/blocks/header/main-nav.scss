@@ -117,6 +117,10 @@
     margin-right: 0;
     box-shadow: none;
   }
+
+  @media (min-width: $large) {
+    margin-left: 70px;
+  }
 }
 
 .main-nav__basket {

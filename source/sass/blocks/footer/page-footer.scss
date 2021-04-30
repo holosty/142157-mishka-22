@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $color-grey;
+
+  @media (min-width: $large) {
+    padding-top: 4px;
+  }
 }
 
 .page-footer__wrapper {
@@ -57,7 +61,7 @@
   align-self: center;
   width: 142px;
   padding-top: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
 }
 
 .page-footer__copyright {
