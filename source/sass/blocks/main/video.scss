@@ -191,6 +191,11 @@
     line-height: 30px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $large) {
+    margin-top: -10px;
+    margin-bottom: 51px;
+  }
 }
 
 .video__button {

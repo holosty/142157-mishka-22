@@ -58,6 +58,8 @@
   @media (min-width: $large) {
     width: 100%;
     flex-grow: 1;
+    padding-left: 27px;
+    padding-right: 32px;
   }
 }
 
@@ -85,6 +87,10 @@
   &--mb {
     @media (min-width: $medium) {
       margin-bottom: 9px;
+    }
+
+    @media (min-width: $large) {
+      margin-bottom: 5px;
     }
   }
 }
@@ -122,6 +128,10 @@
     padding-top: 24px;
     padding-bottom: 24px;
     font-size: 17px;
+  }
+
+  @media (min-width: $large) {
+    padding-top: 18px;
   }
 }
 

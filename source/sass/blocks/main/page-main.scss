@@ -52,5 +52,9 @@
     @media (min-width: $medium) {
       margin-bottom: 78px;
     }
+
+    @media (min-width: $large) {
+      margin-bottom: 127px;
+    }
   }
 }
