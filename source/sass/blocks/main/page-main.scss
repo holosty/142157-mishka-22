@@ -8,14 +8,6 @@
   padding: 73px 30px;
   position: relative;
 
-  &--indent-s {
-    margin-bottom: 17px;
-  }
-
-  &--indent-m {
-    margin-bottom: 30px;
-  }
-
   @media (min-width: $medium) {
     margin-bottom: 67px;
     padding: 101px 50px 75px;
@@ -45,6 +37,20 @@
       bottom: -15px;
       height: 34px;
       background-size: 1150px 34px;
+    }
+  }
+
+  &--indent-s {
+    margin-bottom: 17px;
+  }
+
+  &--indent-m {
+    margin-bottom: 30px;
+  }
+
+  &--catalog {
+    @media (min-width: $medium) {
+      margin-bottom: 78px;
     }
   }
 }

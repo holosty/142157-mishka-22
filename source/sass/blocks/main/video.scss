@@ -75,7 +75,7 @@
   @media (min-width: $medium) {
     margin: 0;
     padding-top: 41px;
-    padding-bottom: 24.5px;
+    padding-bottom: 24px;
     padding-left: 107px;
     grid-row: 2/3;
     font-size: 20px;
@@ -164,8 +164,9 @@
 
   @media (min-width: $medium) {
     padding-top: 0;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $large) {
@@ -184,6 +185,12 @@
   font-size: 13px;
   line-height: 24px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .video__button {
@@ -192,4 +199,8 @@
   padding-bottom: 16px;
   font-size: 18px;
   line-height: 16px;
+
+  @media (min-width: $medium) {
+    margin-right: 0;
+  }
 }
