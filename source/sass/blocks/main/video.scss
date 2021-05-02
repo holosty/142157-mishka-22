@@ -75,7 +75,7 @@
   @media (min-width: $medium) {
     margin: 0;
     padding-top: 41px;
-    padding-bottom: 24.5px;
+    padding-bottom: 24px;
     padding-left: 107px;
     grid-row: 2/3;
     font-size: 20px;
@@ -156,14 +156,17 @@
 }
 
 .video__inner {
-  padding: 35px 34px 33px;
+  padding-top: 35px;
+  padding-left: 33px;
+  padding-bottom: 32px;
   border: 1px solid $color-light-grey;
   border-top: none;
 
   @media (min-width: $medium) {
     padding-top: 0;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 41px;
+    padding-right: 41px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $large) {
@@ -178,15 +181,31 @@
 
 .video__desc {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   font-size: 13px;
   line-height: 24px;
   color: $color-dark-grey;
+
+  @media (min-width: $medium) {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $large) {
+    margin-top: -10px;
+    margin-bottom: 51px;
+  }
 }
 
 .video__button {
+  margin-right: 33px;
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 18px;
   line-height: 16px;
+
+  @media (min-width: $medium) {
+    margin-right: 0;
+  }
 }

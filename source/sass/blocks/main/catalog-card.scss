@@ -46,16 +46,20 @@
 .card__inner {
   display: flex;
   flex-direction: column;
-  padding: 27px 28px 0;
+  padding: 27px 27px 0;
   border: 1px solid $color-light-grey;
 
   @media (min-width: $medium) {
     width: 50%;
+    padding-left: 32px;
+    padding-right: 33px;
   }
 
   @media (min-width: $large) {
     width: 100%;
     flex-grow: 1;
+    padding-left: 27px;
+    padding-right: 32px;
   }
 }
 
@@ -65,7 +69,7 @@
   line-height: 24px;
   color: $color-black;
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 
   &:hover,
   &:focus {
@@ -78,6 +82,16 @@
 
   @media (min-width: $medium) {
     font-size: 20px;
+  }
+
+  &--mb {
+    @media (min-width: $medium) {
+      margin-bottom: 9px;
+    }
+
+    @media (min-width: $large) {
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -94,6 +108,7 @@
 }
 
 .card__price-container {
+  position: relative;
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
@@ -107,18 +122,27 @@
   line-height: 24px;
   margin: 0;
   padding-top: 22.5px;
-  padding-bottom: 26.5px;
+  padding-bottom: 26px;
 
   @media (min-width: $medium) {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-size: 17px;
+  }
+
+  @media (min-width: $large) {
+    padding-top: 18px;
   }
 }
 
 .card__button {
+  position: absolute;
+  right: -2px;
+  bottom: 30px;
   margin: 0;
   padding: 0;
-  width: 20px;
-  height: 19px;
+  width: 21px;
+  height: 18px;
   background-color: transparent;
   border: none;
   cursor: pointer;
