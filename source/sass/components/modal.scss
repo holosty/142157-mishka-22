@@ -1,3 +1,21 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(-3000px);
+  }
+
+  70% {
+    transform: translateY(20px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -12,6 +30,7 @@
 
 .modal-show-js {
   display: block;
+  animation: bounce 500ms;
 }
 
 .modal__overlay {

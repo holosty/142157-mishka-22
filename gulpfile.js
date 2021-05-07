@@ -20,7 +20,7 @@ const htmlmin = require("gulp-htmlmin");
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sourcemap.init())
+    // .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
