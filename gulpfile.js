@@ -20,14 +20,14 @@ const htmlmin = require("gulp-htmlmin");
 const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    // .pipe(sourcemap.init())
+    .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
