@@ -53,7 +53,7 @@ const images = () => {
       imagemin.mozjpeg({quality: 84, progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
@@ -63,7 +63,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.jpg")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("build/img"));
   }
 
 exports.createWebp = createWebp;
@@ -72,7 +72,9 @@ exports.createWebp = createWebp;
 
 const sprite = () => {
   return gulp.src("source/img/spritesvg/*.svg")
-  .pipe(svgstore())
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
   }

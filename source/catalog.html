@@ -94,7 +94,7 @@
                 <p class="card__desc">Рост 30 см, вес 200 г</p>
                 <div class="card__price-container">
                   <p class="card__price">1 200 руб.</p>
-                  <button class="card__button" type="button" aria-label="Положить в корзину">
+                  <button class="card__button order-js" type="button" aria-label="Положить в корзину">
                     <svg class="card__button-icon" aria-hidden="true" focusable="false" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -121,7 +121,7 @@
                 <p class="card__desc">Диаметр 15 см, высота 10 см</p>
                 <div class="card__price-container">
                   <p class="card__price">690 руб.</p>
-                  <button class="card__button" type="button" aria-label="Положить в корзину">
+                  <button class="card__button order-js" type="button" aria-label="Положить в корзину">
                     <svg class="card__button-icon" aria-hidden="true" focusable="false" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -148,7 +148,7 @@
                 <p class="card__desc">Диаметр 30 см, высота 30 см</p>
                 <div class="card__price-container">
                   <p class="card__price">1 500 руб.</p>
-                  <button class="card__button" type="button" aria-label="Положить в корзину">
+                  <button class="card__button order-js" type="button" aria-label="Положить в корзину">
                     <svg class="card__button-icon" aria-hidden="true" focusable="false" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -239,20 +239,22 @@
     </footer>
 
     <section class="modal">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
-          <fieldset class="modal__fieldset">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
-            <label class="modal__label" for="size-s">s</label>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
-            <label class="modal__label" for="size-m">m</label>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
-            <label class="modal__label" for="size-l">l</label>
-          </fieldset>
-          <button class="modal__button button" type="submit">Добавить</button>
-        </form>
+      <div class="modal__overlay">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
+            <fieldset class="modal__fieldset">
+              <legend class="modal__legend">Выберите размер:</legend>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
+              <label class="modal__label" for="size-s">s</label>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
+              <label class="modal__label" for="size-m">m</label>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
+              <label class="modal__label" for="size-l">l</label>
+            </fieldset>
+            <button class="modal__button button" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
     </section>
 
