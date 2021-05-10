@@ -9,7 +9,7 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
 
@@ -127,7 +127,7 @@
           </div>
           <div class="offer__inner">
             <p class="offer__price">Цена: 990 руб.</p>
-            <button class="offer__button button" type="button">Заказать</button>
+            <button class="offer__button button order-js" type="button">Заказать</button>
           </div>
         </div>
       </section>
@@ -267,25 +267,26 @@
     </footer>
 
     <section class="modal">
-      <div class="modal__wrapper">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
-          <fieldset class="modal__fieldset">
-            <legend class="modal__legend">Выберите размер:</legend>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
-            <label class="modal__label" for="size-s">s</label>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
-            <label class="modal__label" for="size-m">m</label>
-            <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
-            <label class="modal__label" for="size-l">l</label>
-          </fieldset>
-          <button class="modal__button button" type="submit">Добавить</button>
-        </form>
+      <div class="modal__overlay">
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST" target="_blank">
+            <fieldset class="modal__fieldset">
+              <legend class="modal__legend">Выберите размер:</legend>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-s" name="size-s" checked>
+              <label class="modal__label" for="size-s">s</label>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-m" name="size-m">
+              <label class="modal__label" for="size-m">m</label>
+              <input class="modal__input-checkbox visually-hidden" type="checkbox" id="size-l" name="size-l">
+              <label class="modal__label" for="size-l">l</label>
+            </fieldset>
+            <button class="modal__button button" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <script src="js/menu.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/main.min.js"></script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback=initMap"></script>
   </body>
 </html>
