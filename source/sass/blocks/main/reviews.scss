@@ -122,11 +122,12 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 33px;
+  min-height: 300px;
   line-height: 30px;
   color: $color-dark-grey;
 
   @media (min-width: $medium) {
+    min-height: auto;
     font-size: 17px;
     margin-bottom: 60px;
   }
