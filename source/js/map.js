@@ -7,8 +7,8 @@ function initMap() {
   });
   // Содержание информационного окна
   const contentString =
-    '<h1>Mishka</h1>' +
-    '<div>' +
+    "<h1>Mishka</h1>" +
+    "<div>" +
     "<p>г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</p>" +
     "</div>";
 
@@ -19,7 +19,7 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: address,
     map: map,
-    title: 'Mishka',
+    title: "Mishka",
     icon: {
       url: "../img/map-pin.svg",
       scaledSize: new google.maps.Size(67, 100)
