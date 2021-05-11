@@ -13,33 +13,33 @@
 
 // Header
 
-@import "blocks/header/page-header.scss";
-@import "blocks/header/logo.scss";
-@import "blocks/header/main-nav.scss";
-@import "blocks/header/nav-list.scss";
-@import "blocks/header/search.scss";
-@import "blocks/header/basket.scss";
-@import "blocks/header/submenu.scss";
+@import "blocks/page-header.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/search.scss";
+@import "blocks/basket.scss";
+@import "blocks/submenu-list.scss";
 
 // Main
 
-@import "blocks/main/page-main.scss";
-@import "blocks/main/button.scss";
-@import "blocks/main/products.scss";
-@import "blocks/main/offer.scss";
-@import "blocks/main/offer-table-property.scss";
-@import "blocks/main/about.scss";
-@import "blocks/main/reviews.scss";
-@import "blocks/main/contacts.scss";
-@import "blocks/main/form.scss";
-@import "blocks/main/catalog.scss";
-@import "blocks/main/catalog-card.scss";
-@import "blocks/main/video.scss";
-@import "components/slider.scss";
+@import "blocks/page-main.scss";
+@import "blocks/button.scss";
+@import "blocks/products.scss";
+@import "blocks/offer.scss";
+@import "blocks/table-property.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-form.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/video.scss";
+@import "blocks/slider.scss";
 
 // Footer
 
-@import "blocks/footer/page-footer.scss";
-@import "blocks/footer/social.scss";
-@import "blocks/footer/copyright.scss";
-@import "components/modal.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/modal.scss";

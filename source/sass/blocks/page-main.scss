@@ -8,6 +8,12 @@
   padding: 73px 30px;
   position: relative;
 
+  @media (max-width: $mobile-only) {
+    &--indent-s {
+      margin-bottom: 17px;
+    }
+  }
+
   @media (min-width: $medium) {
     margin-bottom: 67px;
     padding: 101px 50px 75px;
@@ -38,10 +44,6 @@
       height: 34px;
       background-size: 1150px 34px;
     }
-  }
-
-  &--indent-s {
-    margin-bottom: 17px;
   }
 
   &--indent-m {
