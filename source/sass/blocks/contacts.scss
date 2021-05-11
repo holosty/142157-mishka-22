@@ -153,8 +153,33 @@
   }
 }
 
-.map-google {
+.contacts__map-google {
   min-height: 457px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: $color-background-img;
+  background-position: center;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+
+  @media (min-width: $medium) {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $large) {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
 }
 
 .contacts__button {

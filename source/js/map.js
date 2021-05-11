@@ -1,7 +1,7 @@
 function initMap() {
   const address = { lat: 59.9387192, lng: 30.3208587 }; //Записываем нужный адрес
 
-  const map = new google.maps.Map(document.querySelector(".map-google"), {
+  const map = new google.maps.Map(document.querySelector(".contacts__map-google"), {
     center: address,
     zoom: 17,
   });
