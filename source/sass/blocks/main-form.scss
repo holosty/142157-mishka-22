@@ -49,12 +49,14 @@
   }
 
   &--indent-textarea {
+    margin-bottom: 4px;
+
     @media (min-width: $medium) {
-      margin-bottom: 50px;
+      margin-bottom: 54px;
     }
 
     @media (min-width: $large) {
-      margin-bottom: 45px;
+      margin-bottom: 49px;
     }
   }
 
